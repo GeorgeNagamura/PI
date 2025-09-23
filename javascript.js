@@ -34,8 +34,8 @@ function card2Anim(scroll_pos){
     let newscrollpos = scroll_pos - 600
     let y = card2_start_translateY - (newscrollpos * 1.5);
     
-    if(y < -290) {y = -290}
-    card2.innerText = newscrollpos;
+    if(y < -270) {y = -270}
+    
     if (scroll_pos <= 900) {
         card2.style.rotate = '10deg';
         card2.style.transform = `translateY(${y}px)`;
@@ -53,8 +53,8 @@ function card3Anim(scroll_pos){
     let newscrollpos = scroll_pos - 1200
     let y = card3_start_translateY - (newscrollpos * 3);
     
-    if(y < -580) {y = -580}
-    card3.innerText = newscrollpos;
+    if(y < -560) {y = -560}
+    
     if (scroll_pos <= 1380) {
         
         card3.style.rotate = '1deg';

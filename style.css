@@ -1,6 +1,34 @@
+@font-face {
+    font-family: "Hex-Franklin-Variable";
+    src: url("fonts/hex-franklin-font-1758518166-0/HEX-Franklin-v.0.2-Variable.ttf");
+}
+
+@font-face {
+    font-family: "Hex-Franklin-ExtraBold";
+    src: url("fonts/hex-franklin-font-1758518166-0/HEX-Franklin-v02-Extrabold.ttf");
+}
+
+@font-face {
+    font-family: "Hex-Franklin-ExtraCondensedBold";
+    src: url("fonts/hex-franklin-font-1758518166-0/HEX-Franklin-v02-Extra-Condensed-Bold.ttf");
+}
+
+:root {
+    --color-primary: #000;
+    --color-secondary: #fff;
+    --color-terciary: #fbcb0b;
+    --color-muted: #777777;
+    --color-darker-gray: #1a1a1a;
+}
+
+
 body {
     margin: 0;
-    background-color: black;
+    background-color: var(--color-primary);
+}
+
+.fonte-zero {
+    font-size: 0px;
 }
 
 .hide-scrollbar {
@@ -12,10 +40,43 @@ body {
   display: none; /* Chrome, Safari, Edge */
 }
 
-.warning {
-    background-color: rgb(255, 217, 0);
-    background-image: url("Rectangle\ 1.svg");
+.nav {
+    font-family: "Hex-Franklin-Extrabold";
     
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: 61px;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: var(--color-muted);
+    font-size: 61px;
+}
+
+.aviso {
+    background-color: var(--color-terciary);
+    font-family: "Hex-Franklin-ExtraCondensedBold";
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 16px;
+    margin: 0px;
+}
+.warning {
+    background-color: var(--color-terciary);
+    background-image: url("img/warning.png");
+    min-height: 20px;
 }
 .se1 {
     margin: auto;
@@ -25,9 +86,11 @@ body {
     margin: 0;
     padding: 0.4em;
     text-align: center;
-    color: white;
-    font-size: 4em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-secondary);
+    font-size: 173px;
+    font-family: "Hex-Franklin-Extrabold";
+    letter-spacing: -6px;
+
 }
 
 .intro-p {
@@ -42,15 +105,27 @@ body {
     min-height: 300px;
     border-radius: 10px;
     margin-right: auto;
+    font-family: "Hex-Franklin-Variable";
+    font-weight: 600;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
 }
 
 .card1 {
+    background-color: var(--color-darker-gray);
+    color: var(--color-secondary);
     transition: 0.5s all;
     display: block;
     margin-inline: auto;
     transform: translateY(460px);
     rotate: -10deg;
-    z-index: 2;
+    z-index: 0;
 }
 
 .card2 {
@@ -67,10 +142,78 @@ body {
     margin-inline: auto;
     transform: translateY(440px);
     transition: 0.5s all;
-    z-index: 0;
+    z-index: 2;
 }
 
 #out1 {
     color: aliceblue;
 }
 
+.contato {
+    
+    margin-block: 100px;
+    margin-inline: auto;
+    background-color: var(--color-darker-gray);
+    width: 70%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.formline {
+    font-family: "Hex-Franklin-ExtraCondensedBold";
+    font-size: 78px;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-left: auto;    
+}
+
+
+
+input[type="text"] {
+    font-size: 78px;
+    font-family: "Hex-Franklin-ExtraCondensedBold";
+    background-color: var(--color-darker-gray);
+    border: none;
+    border-bottom: #777777 solid ;
+    color: var(--color-secondary);
+    margin-bottom: 1em;
+}
+input[type="submit"] {
+    margin-top: 20px;
+    font-size: 78px;
+    font-family: "Hex-Franklin-ExtraCondensedBold";
+    background-color: var(--color-darker-gray);
+    border: none;
+    display: block;
+    margin-inline: auto;
+    color: var(--color-secondary);
+}
+input[type="submit"]:hover {
+    font-size: 78px;
+    font-family: "Hex-Franklin-ExtraCondensedBold";
+    background-color: var(--color-darker-gray);
+    border: none;
+    display: block;
+    margin-inline: auto;
+    color: var(--color-muted);
+    cursor: pointer;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    font-size: 78px;
+    font-family: "Hex-Franklin-ExtraCondensedBold";
+    background-color: var(--color-darker-gray);
+    border: none;
+    border-bottom: #777777 solid ;
+    color: var(--color-secondary);
+}
+
+.rodape {
+    background-color: var(--color-darker-gray);
+    font-family: "Hex-Franklin-ExtraCondensedBold";
+    padding: 20px;
+    text-align: center;
+    color: var(--color-muted);
+}
