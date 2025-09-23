@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.warning {
+    background-color: rgb(255, 217, 0);
+    background-image: url("Rectangle\ 1.svg");
+    
+}
+.se1 {
+    margin: auto;
+}
+
+.page-title {
+    margin: 0;
+    padding: 0.4em;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intro-p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    max-width: 180px;
+    min-height: 300px;
+    border-radius: 10px;
+    margin-right: auto;
+}
+
+.card1 {
+    transition: 0.5s all;
+    display: block;
+    margin-inline: auto;
+    transform: translateY(460px);
+    rotate: -10deg;
+    z-index: 2;
+}
+
+.card2 {
+    
+    rotate: 15deg;
+    margin-inline: auto;
+    transform: translateY(440px);
+    transition: 0.5s all;
+    z-index: 1;
+}
+
+.card3 {
+    rotate: 10deg;
+    margin-inline: auto;
+    transform: translateY(440px);
+    transition: 0.5s all;
+    z-index: 0;
+}
+
+#out1 {
+    color: aliceblue;
+}
+
