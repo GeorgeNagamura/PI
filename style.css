@@ -181,6 +181,7 @@ body {
 }
 input[type="text"] {
     font-size: 4rem;
+    width: 90%;
     font-family: "Hex-Franklin-ExtraCondensedBold";
     background-color: var(--color-darker-gray);
     border: none;
@@ -192,6 +193,7 @@ input[type="text"] {
 input[type="submit"] {
     margin-top: 20px;
     font-size: 4rem;
+    
     font-family: "Hex-Franklin-ExtraCondensedBold";
     background-color: var(--color-darker-gray);
     border: none;
@@ -212,6 +214,7 @@ input[type="submit"]:hover {
 
 textarea {
     display: block;
+    width: 90%;
     /* width: 100vw; */
     font-size: 4rem;
     font-family: "Hex-Franklin-ExtraCondensedBold";
