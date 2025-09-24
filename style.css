@@ -19,15 +19,18 @@
     --color-terciary: #fbcb0b;
     --color-muted: #777777;
     --color-darker-gray: #1a1a1a;
+    outline: #fbcb0b 1px solid;
 }
 
 
 body {
+    outline: #fbcb0b 1px solid;
     margin: 0;
     background-color: var(--color-primary);
 }
 
 .fonte-zero {
+    outline: #fbcb0b 1px solid;
     font-size: 0px;
 }
 
@@ -42,20 +45,20 @@ body {
 
 .nav {
     font-family: "Hex-Franklin-Extrabold";
-    
+    outline: #fbcb0b 1px solid;
 }
 
 .nav ul{
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 3rem;
 }
 
 .nav a {
     text-decoration: none;
     color: var(--color-secondary);
-    font-size: 61px;
+    font-size: 2rem;
 }
 
 .nav a:hover {
@@ -79,18 +82,21 @@ body {
     min-height: 20px;
 }
 .se1 {
+    outline: #fbcb0b 1px solid;
     margin: auto;
 }
 
 .page-title {
     margin: 0;
     padding: 0.4em;
+    padding-bottom: 0;
     text-align: center;
     color: var(--color-secondary);
-    font-size: 173px;
+    font-size: 12vw;
     font-family: "Hex-Franklin-Extrabold";
-    letter-spacing: -6px;
-
+    letter-spacing: -0.08em;
+    outline: #fbcb0b 1px solid;
+    /* transform: scale(0, 1.2); */
 }
 
 .intro-p {
@@ -161,26 +167,31 @@ body {
 
 .formline {
     font-family: "Hex-Franklin-ExtraCondensedBold";
-    font-size: 78px;
+    font-size: 4rem;
     font-weight: 700;
     color: var(--color-secondary);
-    margin-left: auto;    
+    margin-left: auto;
+    
 }
 
 
-
+.label {
+    display: inline-block;
+    margin-right: 4rem;
+}
 input[type="text"] {
-    font-size: 78px;
+    font-size: 4rem;
     font-family: "Hex-Franklin-ExtraCondensedBold";
     background-color: var(--color-darker-gray);
     border: none;
     border-bottom: #777777 solid ;
     color: var(--color-secondary);
     margin-bottom: 1em;
+    
 }
 input[type="submit"] {
     margin-top: 20px;
-    font-size: 78px;
+    font-size: 4rem;
     font-family: "Hex-Franklin-ExtraCondensedBold";
     background-color: var(--color-darker-gray);
     border: none;
@@ -189,7 +200,7 @@ input[type="submit"] {
     color: var(--color-secondary);
 }
 input[type="submit"]:hover {
-    font-size: 78px;
+    font-size: 4rem;
     font-family: "Hex-Franklin-ExtraCondensedBold";
     background-color: var(--color-darker-gray);
     border: none;
@@ -201,8 +212,8 @@ input[type="submit"]:hover {
 
 textarea {
     display: block;
-    width: 100%;
-    font-size: 78px;
+    /* width: 100vw; */
+    font-size: 4rem;
     font-family: "Hex-Franklin-ExtraCondensedBold";
     background-color: var(--color-darker-gray);
     border: none;
@@ -217,3 +228,10 @@ textarea {
     text-align: center;
     color: var(--color-muted);
 }
+
+/* 
+@media  (width < 600px) {
+    .page-title {
+        font-size: 28vw;
+    }
+} */
