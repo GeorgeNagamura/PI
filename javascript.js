@@ -78,7 +78,7 @@ container.addEventListener('scroll', ()=>{
         direction = "up"
     }
     count++
-    out1.innerHTML = scroll_pos;
+    
     card1Anim(scroll_pos);
     if (scroll_pos > 1100) {
         card3Anim(scroll_pos);

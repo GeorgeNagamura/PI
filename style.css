@@ -19,18 +19,15 @@
     --color-terciary: #fbcb0b;
     --color-muted: #777777;
     --color-darker-gray: #1a1a1a;
-    outline: #fbcb0b 1px solid;
-}
+    }
 
 
 body {
-    outline: #fbcb0b 1px solid;
     margin: 0;
     background-color: var(--color-primary);
 }
 
 .fonte-zero {
-    outline: #fbcb0b 1px solid;
     font-size: 0px;
 }
 
@@ -45,8 +42,7 @@ body {
 
 .nav {
     font-family: "Hex-Franklin-Extrabold";
-    outline: #fbcb0b 1px solid;
-}
+    }
 
 .nav ul{
     list-style-type: none;
@@ -59,6 +55,7 @@ body {
     text-decoration: none;
     color: var(--color-secondary);
     font-size: 2rem;
+    transition: font-size 300ms ease;
 }
 
 .nav a:hover {
@@ -82,7 +79,6 @@ body {
     min-height: 20px;
 }
 .se1 {
-    outline: #fbcb0b 1px solid;
     margin: auto;
 }
 
@@ -95,7 +91,7 @@ body {
     font-size: 12vw;
     font-family: "Hex-Franklin-Extrabold";
     letter-spacing: -0.08em;
-    outline: #fbcb0b 1px solid;
+    
     /* transform: scale(0, 1.2); */
 }
 
