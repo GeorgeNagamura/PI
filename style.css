@@ -112,8 +112,17 @@ body {
     font-size: clamp(3em, 11vw + 1rem, 12rem);
     font-family: "Hex-Franklin-Extrabold";
     letter-spacing: -0.08em;
-    
+    line-height: 80%;
     /* transform: scale(0, 1.2); */
+}
+.sub-title{
+    max-width: 900px;
+    text-align: end;
+    margin-inline: auto;
+    color: var(--color-muted);
+    font-size: clamp(0.4em, 1vw + 1rem, 2rem);
+    font-family: "Hex-Franklin-Extrabold";
+    letter-spacing: -0.08em;
 }
 
 .intro-p {
@@ -170,6 +179,53 @@ body {
 
 #out1 {
     color: aliceblue;
+}
+
+
+OL { counter-reset: item;padding:0 }
+LI { display: block }
+LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+.tutorial__container {
+    display: flex;
+    margin-inline:auto;
+    margin-top:3em;
+    max-width: 900px;
+
+}
+.cell-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell-img img {
+    margin-top:auto;
+}
+
+.tutorial__texto {
+    font-family: "Hex-Franklin-ExtraBold";
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.tutorial__texto p {
+    margin-top: 3em;
+}
+
+.tutorial__texto__step__body {
+    text-align: left;
+}
+
+.tutorial__texto__step__title{
+    margin-block:1em;
+}
+
+.tutorial__img-holder img{
+    display: block;
+}
+.tutorial__img-holder {
+    display: flex;
+    justify-content: center;
 }
 
 .contato {
