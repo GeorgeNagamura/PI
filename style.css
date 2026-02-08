@@ -115,6 +115,18 @@ body {
     line-height: 80%;
     /* transform: scale(0, 1.2); */
 }
+.section-title {
+    margin:4rem;
+    padding: 0.4em;
+    padding-bottom: 0;
+    text-align: center;
+    color: var(--color-secondary);
+    font-size: clamp(1em, 5vw + 1rem, 8rem);
+    font-family: "Hex-Franklin-Extrabold";
+    line-height: 80%;
+    /* transform: scale(0, 1.2); */
+}
+
 .sub-title{
     max-width: 900px;
     text-align: end;
@@ -181,6 +193,18 @@ body {
     color: aliceblue;
 }
 
+.definicao {
+    margin-inline: auto;
+    font-family: "Hex-Franklin-Variable";
+    color: var(--color-secondary);
+    text-align: justify;
+    font-size: 1.5em;
+    width: 80%;
+    max-width: 700px;
+}
+.definicao p {
+    margin-bottom: 1em;
+}
 
 OL { counter-reset: item;padding:0 }
 LI { display: block }
@@ -202,7 +226,7 @@ LI:before { content: counters(item, ".") " "; counter-increment: item }
     margin-top:auto;
 }
 
-.tutorial__texto {
+.tutorial__texto  {
     font-family: "Hex-Franklin-ExtraBold";
     color: var(--color-secondary);
     text-align: center;
